@@ -8,7 +8,7 @@ if len(sys.argv) != 2:
 else:
   participants = int(sys.argv[1])
 
-print("Booking a meeting room for %d participants..." % participants)
+print("Booking a meeting room for %d participant%s..." % (participants, "s" if participants > 1 else ""))
 
 room = bookMeetingRoom(participants)
 
