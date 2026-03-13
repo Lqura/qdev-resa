@@ -8,6 +8,8 @@ class bookMeetingRoomUnitTests(unittest.TestCase):
     self.assertEqual(bookMeetingRoom(27), Room.MEDIUM)
   def test_large_room(self):
     self.assertEqual(bookMeetingRoom(42)), Room.LARGE)
+  def test_refused_room(self):
+    self.assertGreater(bookMeetingRoom(50)), Room.REFUSE)
 
 if __name__ == '__main__':
   unittest.main()
