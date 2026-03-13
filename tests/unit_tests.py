@@ -11,7 +11,7 @@ class bookMeetingRoomUnitTests(unittest.TestCase):
   def test_refused_room(self):
     self.assertGreater(bookMeetingRoom(50), Room.REFUSE)
   def test_error(self):
-    self.assertLess(bookMeetingRoom(1), ValueError("Nombre de participants négatifs"))
+    self.assertLess(bookMeetingRoom(0), ValueError("Nombre de participants négatifs"))
 
 if __name__ == '__main__':
   unittest.main()
