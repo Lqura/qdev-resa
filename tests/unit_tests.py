@@ -7,9 +7,9 @@ class bookMeetingRoomUnitTests(unittest.TestCase):
   def test_medium_room(self):
     self.assertEqual(bookMeetingRoom(27), Room.MEDIUM)
   def test_large_room(self):
-    self.assertEqual(bookMeetingRoom(42)), Room.LARGE)
+    self.assertEqual(bookMeetingRoom(42), Room.LARGE)
   def test_refused_room(self):
-    self.assertGreater(bookMeetingRoom(50)), Room.REFUSE)
+    self.assertGreater(bookMeetingRoom(50), Room.REFUSE)
   def test_error(self):
     self.assertLess(bookMeetingRoom(1), ValueError)
 
